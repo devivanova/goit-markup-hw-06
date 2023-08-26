@@ -80,6 +80,95 @@
         letter-spacing: 0.02em;
         color: var(--text-color);
     }
+
+    .we-doing-section {
+        display: none;
+    }
+
+    .our-team-section {
+        background-color: var(--primary-light-color);
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+
+    .team-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 72px;
+    }
+
+    .employee-list-item {
+        background-color: var(--primary-white-color);
+        border-radius: 0px 0px 4px 4px;
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+            0px 1px 1px rgba(46, 47, 66, 0.16),
+            0px 2px 1px rgba(46, 47, 66, 0.08);
+    }
+
+    .our-team-title {
+        font-size: 36px;
+        line-height: 1.11;
+        text-align: center;
+        letter-spacing: 0.02em;
+        padding-bottom: 72px;
+        text-transform: capitalize;
+        color: var(--primary-dark-color);
+    }
+
+    .employee-container {
+        padding: 32px 0;
+    }
+
+    .employee-name {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: var(--primary-dark-color);
+        margin-bottom: 8px;
+        text-align: center;
+    }
+
+    .employee-position {
+        font-size: 16px;
+        letter-spacing: 0.02em;
+        color: var(--text-color);
+        text-align: center;
+        margin-bottom: 8px;
+    }
+
+    .employee-social-list {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    .employee-social-list-item {
+        width: 40px;
+        height: 40px;
+    }
+
+    .employee-social-list-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        background-color: var(--primary-brand-color);
+        color: var(--primary-light-color);
+        border-radius: 50%;
+        transition: background-color var(--transition-dur-and-func);
+    }
+
+    .employee-social-list-link:hover,
+    .employee-social-list-link:focus {
+        background-color: var(--pressed-state-color);
+    }
+
+    .employee-social-list-icon {
+        fill: var(--primary-light-color);
+    }
 }
     
 @media screen and (max-width: 767px) and (min-resolution: 192dpi),
@@ -141,46 +230,137 @@ screen and (max-width: 767px) and (min-device-pixel-ratio: 2) {
         background-color: var(--pressed-state-color);
     }
 
-        .advantages-section {
-            padding: 96px 0;
-        }
-    
-        .advantages-container {
-            display: flex;
-            justify-content: space-between;
-        }
-    
-        .advantages-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 72px 24px;
-        }
-    
-        .advantages-list-item {
-            width: calc((100% - 24px) / 2);
-        }
-    
-        .advantages-icon-wrapper {
-            display: none;
-        }
-    
-        .advantage-title {
-            color: var(--primary-dark-color);
-            margin-bottom: 8px;
-            font-size: 36px;
-            font-weight: 700;
-            line-height: 1.11;
-            letter-spacing: 0.02em;
-            text-align: center;
-        }
-    
-        .advantage-description {
-            font-size: 16px;
-            font-weight: 500;
-            line-height: 1.5;
-            letter-spacing: 0.02em;
-            color: var(--text-color);
-        }
+    .advantages-section {
+        padding: 96px 0;
+    }
+
+    .advantages-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .advantages-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 72px 24px;
+    }
+
+    .advantages-list-item {
+        width: calc((100% - 24px) / 2);
+    }
+
+    .advantages-icon-wrapper {
+        display: none;
+    }
+
+    .advantage-title {
+        color: var(--primary-dark-color);
+        margin-bottom: 8px;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        text-align: center;
+    }
+
+    .advantage-description {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: var(--text-color);
+    }
+
+    .we-doing-section {
+        display: none;
+    }
+
+    .our-team-section {
+        background-color: var(--primary-light-color);
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+
+    .team-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 64px 24px;
+    }
+
+    .employee-list-item {
+        max-width: calc((100% - 208px) / 2);
+        background-color: var(--primary-white-color);
+        border-radius: 0px 0px 4px 4px;
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+            0px 1px 1px rgba(46, 47, 66, 0.16),
+            0px 2px 1px rgba(46, 47, 66, 0.08);
+    }
+
+    .our-team-title {
+        font-size: 36px;
+        line-height: 1.11;
+        text-align: center;
+        letter-spacing: 0.02em;
+        padding-bottom: 72px;
+        text-transform: capitalize;
+        color: var(--primary-dark-color);
+    }
+
+    .employee-container {
+        padding: 32px 0;
+    }
+
+    .employee-name {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: var(--primary-dark-color);
+        margin-bottom: 8px;
+        text-align: center;
+    }
+
+    .employee-position {
+        font-size: 16px;
+        letter-spacing: 0.02em;
+        color: var(--text-color);
+        text-align: center;
+        margin-bottom: 8px;
+    }
+
+    .employee-social-list {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    .employee-social-list-item {
+        width: 40px;
+        height: 40px;
+    }
+
+    .employee-social-list-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        background-color: var(--primary-brand-color);
+        color: var(--primary-light-color);
+        border-radius: 50%;
+        transition: background-color var(--transition-dur-and-func);
+    }
+
+    .employee-social-list-link:hover,
+    .employee-social-list-link:focus {
+        background-color: var(--pressed-state-color);
+    }
+
+    .employee-social-list-icon {
+        fill: var(--primary-light-color);
+    }
 }
   
 @media screen and (min-width: 768px) and (min-resolution: 192dpi),
