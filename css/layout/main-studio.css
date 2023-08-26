@@ -46,6 +46,40 @@
     .cta-button:focus {
         background-color: var(--pressed-state-color);
     }
+
+    .advantages-section {
+        padding: 96px 0;
+    }
+
+    .advantages-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .advantages-icon-wrapper {
+        display: none;
+    }
+
+    .advantages-list-item:not(:last-child) {
+        margin-bottom: 72px;
+    }
+
+    .advantage-title {
+        color: var(--primary-dark-color);
+        margin-bottom: 8px;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        text-align: center;
+    }
+
+    .advantage-description {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: var(--text-color);
+    }
 }
     
 @media screen and (max-width: 767px) and (min-resolution: 192dpi),
@@ -106,6 +140,47 @@ screen and (max-width: 767px) and (min-device-pixel-ratio: 2) {
     .cta-button:focus {
         background-color: var(--pressed-state-color);
     }
+
+        .advantages-section {
+            padding: 96px 0;
+        }
+    
+        .advantages-container {
+            display: flex;
+            justify-content: space-between;
+        }
+    
+        .advantages-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 72px 24px;
+        }
+    
+        .advantages-list-item {
+            width: calc((100% - 24px) / 2);
+        }
+    
+        .advantages-icon-wrapper {
+            display: none;
+        }
+    
+        .advantage-title {
+            color: var(--primary-dark-color);
+            margin-bottom: 8px;
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 1.11;
+            letter-spacing: 0.02em;
+            text-align: center;
+        }
+    
+        .advantage-description {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.5;
+            letter-spacing: 0.02em;
+            color: var(--text-color);
+        }
 }
   
 @media screen and (min-width: 768px) and (min-resolution: 192dpi),
