@@ -322,7 +322,6 @@ screen and (max-width: 767px) and (min-device-pixel-ratio: 2) {
         font-weight: 700;
         line-height: 1.11;
         letter-spacing: 0.02em;
-        text-align: center;
     }
 
     .advantage-description {
@@ -737,9 +736,6 @@ screen and (min-width: 768px) and (min-device-pixel-ratio: 2) {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-top: 24px;
-        padding-bottom: 24px;
-        margin-bottom: 8px;
         color: var(--subtle-text-color);
         transition: border-color var(--transition-dur-and-func),
             color var(--transition-dur-and-func);
