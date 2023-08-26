@@ -1,0 +1,254 @@
+@media screen and (max-width: 767px) {
+}
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+}
+
+@media screen and (min-width: 1158px) {
+    /* ================ BACKDROP ================ */
+    .backdrop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(46, 47, 66, 0.4);
+        transition: opacity var(--transition-dur-and-func), visibility var(--transition-dur-and-func);
+    }
+
+    .is-hidden {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+
+    /* ================ MODAL WINDOW ================ */
+
+    .modal {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 408px;
+        height: 584px;
+        padding: 72px 24px 24px;
+        background-color: var(--modal-background-color);
+        border-radius: 4px;
+        min-height: 584px;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
+            0px 1px 3px rgba(0, 0, 0, 0.12),
+            0px 2px 1px rgba(0, 0, 0, 0.2);
+        transition: transform var(--transition-dur-and-func);
+    }
+
+    .close-btn {
+        display: flex;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        top: 24px;
+        right: 24px;
+        padding: 0;
+        line-height: 0;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        width: 24px;
+        height: 24px;
+        background-color: var(--accent-color);
+        transition: background-color var(--transition-dur-and-func),
+            border var(--transition-dur-and-func);
+        color: var(--primary-dark-color);
+    }
+
+    .close-btn:hover,
+    .close-btn:focus {
+        background-color: var(--pressed-state-color);
+        border: none;
+        color: #ffffff;
+    }
+
+    .close-btn-icon {
+        fill: currentColor;
+        transition: fill var(--transition-dur-and-func);
+    }
+
+    .close-btn-icon:hover,
+    .close-btn-icon:focus {
+        fill: currentColor;
+    }
+
+    .contacts-for-call-form-description {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: var(--primary-dark-color);
+        margin-bottom: 16px;
+    }
+
+    .contacts-for-call-form-field {
+        display: block;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
+        margin-bottom: 4px;
+        color: var(--subtle-text-color);
+    }
+
+    .contacts-for-call-form-user-label-and-input-wrapper {
+        margin-bottom: 8px;
+    }
+
+    .contacts-for-call-form-user-label-and-message-wrapper {
+        margin-bottom: 16px;
+    }
+
+    .contacts-for-call-form-field-desc {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 0.86;
+        letter-spacing: 0.04em;
+        text-align: left;
+        color: var(--subtle-text-color);
+        margin-bottom: 4px;
+    }
+
+    .contacts-for-call-form-input-wrapper {
+        display: block;
+        position: relative;
+    }
+
+    .contacts-for-call-form-input {
+        width: 100%;
+        height: 40px;
+        top: 84px;
+        border-radius: 4px;
+        border: 1px solid var(--input-border-color);
+        background-color: transparent;
+        padding-left: 38px;
+        font-size: 18px;
+        outline: transparent;
+        transition: border-color var(--transition-dur-and-func);
+    }
+
+    .contacts-for-call-form-input:focus {
+        border-color: var(--primary-brand-color);
+        outline: transparent;
+        outline-offset: 4px;
+    }
+
+    .contacts-for-call-form-input-icon {
+        position: absolute;
+        top: 50%;
+        left: 16px;
+        transform: translateY(-50%);
+        fill: var(--primary-dark-color);
+        transition: fill var(--transition-dur-and-func);
+    }
+
+    .contacts-for-call-form-input:focus+.contacts-for-call-form-input-icon {
+        fill: var(--primary-brand-color);
+    }
+
+    .contacts-for-call-form-message {
+        width: 100%;
+        height: 120px;
+        resize: none;
+        border: 1px solid var(--input-border-color);
+        color: var(--input-border-color);
+        background-color: transparent;
+        border-radius: 4px;
+        padding: 8px 16px;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
+        outline: transparent;
+        transition: border-color var(--transition-dur-and-func);
+    }
+
+    .contacts-for-call-form-message:focus {
+        border-color: var(--primary-brand-color);
+    }
+
+    .contacts-for-call-form-message::placeholder {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px;
+        letter-spacing: 0.04em;
+        color: var(input-border-color);
+    }
+
+    .contacts-for-call-form-checkbox-wrapper {
+        margin-bottom: 24px;
+    }
+
+    .contacts-for-call-form-checkbox-label {
+        display: block;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
+        color: var(--subtle-text-color);
+    }
+
+    .privacy-policy-checkbox-wrapper {
+        display: inline-flex;
+        border: 1px solid var(--input-border-color);
+        border-radius: 2px;
+        align-items: center;
+        justify-content: center;
+        fill: transparent;
+        cursor: pointer;
+        margin-right: 8px;
+        width: 16px;
+        height: 16px;
+        transition: background-color var(--transition-dur-and-func),
+            border var(--transition-dur-and-func),
+            fill var(--transition-dur-and-func);
+    }
+
+    .contacts-for-call-form-checkbox:checked+.contacts-for-call-form-checkbox-label>.privacy-policy-checkbox-wrapper {
+        fill: var(--primary-light-color);
+        background-color: var(--pressed-state-color);
+        border: none;
+    }
+
+    .contacts-for-call-form-checkbox-label:focus>.privacy-policy-checkbox-wrapper {
+        border-color: var(--primary-brand-color);
+    }
+
+    .privacy-policy-link {
+        font-size: 14px;
+        color: var(--primary-brand-color);
+    }
+
+    .privacy-policy-link:hover {
+        color: var(--pressed-state-color);
+    }
+
+    .contacts-for-call-form-btn {
+        display: block;
+        min-width: 169px;
+        height: 56px;
+        background-color: var(--primary-brand-color);
+        font-family: var(--primary-font);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        color: var(--primary-white-color);
+        padding: 16px 32px;
+        margin-left: auto;
+        margin-right: auto;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color var(--transition-dur-and-func);
+    }
+
+    .contacts-for-call-form-btn:hover,
+    .contacts-for-call-form-btn:focus {
+        background-color: var(--pressed-state-color);
+    }
+}
